@@ -1,0 +1,111 @@
+/* Footer.css */
+
+.footer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  border-top: 10px groove #495E57;
+}
+
+@media (max-width: 800px) {
+  .footer {
+    flex-wrap: wrap;
+    text-align: center;
+  }
+}
+
+.footer img {
+  width: 70%;
+}
+
+@media (max-width: 800px) {
+  .footer img {
+    width: 50%;
+    margin: 0;
+  }
+}
+
+.one {
+  width: 30%;
+  margin-right: 2em;
+  display: flex;
+}
+
+.two {
+  width: 20%;
+  margin: 1em;
+  margin-top: 7em;
+}
+.three {
+  width: 20%;
+  margin: 1em;
+  margin-top: 7em;
+}
+.four {
+  width: 20%;
+  margin: 1em;
+  margin-top: 7em;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+@media (max-width: 800px) {
+  .one
+  {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .two
+  {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .three
+  {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .four {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .one {
+    margin: 10px;
+  }
+}
+
+h5 {
+  font-family: "Markazi Text", serif;
+  font-size: 25px;
+  color: #000;
+  margin-top: -1.5em;
+}
+
+#nav,
+.a {
+  font-family: "Karla", sans-serif;
+  font-weight: 550;
+  color: #000;
+  text-decoration: none;
+  list-style: none;
+}

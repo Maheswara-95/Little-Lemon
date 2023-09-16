@@ -1,10 +1,17 @@
-import './App.css';
+import React from "react";
+import Home from "./Home";
+import Reservations from "./Routes/Reservations";
+
+import {Route, Routes} from "react-router-dom";
 
 function App() {
   return (
-    <div>
-    Homepage
-    </div>
+    <>
+      <Routes>
+        <Route path = "/" element = {<Home />}/>
+        <Route path = "/reservations" element = {<Reservations />}/>
+      </Routes>
+    </>
   );
 }
 
