@@ -1,0 +1,141 @@
+/* Hero.css */
+
+.main {
+    background-color: #495e57;
+    display: flex;
+    height: 420px;
+    margin-top: 2em;
+    width: 100%;
+  }
+
+  @media (max-width: 800px) {
+    .main {
+      justify-content: center;
+      height: auto;
+      text-align: center;
+    }
+  }
+
+  .main-content {
+    width: 40%;
+    margin-left: 7em;
+    margin-right: 5em;
+  }
+
+  @media (max-width: 800px) {
+    .main-content {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      width: 100%;
+      margin: 0;
+      padding: 2em;
+    }
+  }
+
+  .main-content h1 {
+    font-size: 60px;
+    color: #F4CE14;
+    font-family: 'Markazi Text', serif;
+    font-weight: 700;
+  }
+
+  @media (max-width: 800px) {
+    h1 {
+      font-size: 60px;
+      margin-top: 1em;
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
+
+
+  .main-content h2 {
+    font-size: 40px;
+    color: white;
+    font-family: 'Markazi Text', serif;
+    font-weight: 700;
+    margin-top: -40px;
+  }
+
+  .main-content p {
+    font-size: 20px;
+    color: white;
+    font-family: 'Karla', sans-serif;
+    width: 350px;
+  }
+
+  @media (max-width: 800px) {
+    .main-content p {
+      text-align: center;
+      width: 95%;
+    }
+  }
+
+  .button {
+    background-color: #F4CE14;
+    color: #000000;
+    height: 3em;
+    width: 12em;
+    margin: 1em;
+    border-radius: 2em;
+    border: none;
+    font-family: 'Karla', sans-serif;
+    font-size: 18px;
+    font-weight: 800;
+    box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.2);
+  }
+
+  .button:hover {
+    cursor: pointer;
+    background-color: #333333;
+    color: #f4ce14;
+    transition: 0.4s;
+  }
+
+  @media (max-width: 400px) {
+    .specials #button {
+      margin-top: 1em;
+      margin-bottom: 2em;
+    }
+  }
+
+  .featured img {
+    width: 50%;
+    height: 500px;
+    border-radius: 15px;
+    margin-top: 2em;
+    margin-left: 6em;
+    box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.2);
+  }
+
+  @media (min-width: 700px) and (max-width: 1050) {
+    .featured img {
+      margin-left: -2em;
+      width: 100%;
+    }
+  }
+
+  @media (max-width: 500px) {
+    .featured img {
+      display: none;
+    }
+  }
+
+  .featured {
+    width: 50%;
+  }
+
+  @media (max-width: 800px) {
+    .featured {
+      display: none;
+    }
+  }
+
+  .button:hover {
+    cursor: pointer;
+  }
+
+  .specials #button {
+    margin-top: 4em;
+  }
