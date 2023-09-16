@@ -1,95 +1,140 @@
 /* Style for the container div */
 .booking-form {
-  width: 400px;
-  margin: 0 auto;
-  padding: 40px;
-  border-radius: 5px;
-  background-color: #f9f9f9;
-}
+    width: 400px;
+    margin: 0 auto;
+    padding: 40px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+  }
 
-/* Style for the form heading */
-.booking-form h2 {
-  text-align: center;
-  color: #333;
-}
+  /* Style for the form heading */
+  .booking-form h2 {
+    text-align: center;
+    color: #333;
+  }
 
-/* Style for form groups */
-.form-group {
-  margin-bottom: 20px;
-}
+  /* Style for form groups */
+  .form-group {
+    margin-bottom: 20px;
+  }
 
-/* Style for labels */
-.form-group label {
-  display: block;
-  margin-bottom: 5px;
-  color: #666;
-}
+  /* Style for labels */
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #666;
+  }
 
-/* Style for input fields */
-.form-group input[type="date"],
-.form-group input[type="time"],
-.form-group input[type="number"],
-.form-group input[type="text"],
-.form-group input[type="email"] {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
+  /* Style for input fields */
+  .form-group input[type="date"],
+  .form-group input[type="time"],
+  .form-group input[type="number"],
+  .form-group input[type="text"],
+  .form-group input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
 
-/* Style for the submit button */
-button[type="submit"] {
-  display: inline-block;
-  width: 150px;
-  padding: 10px;
-  background-color: #495e57;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease; /* Add smooth transition */
-}
+  /* Style for the submit button */
+  button[type="submit"] {
+    display: inline-block;
+    width: 150px;
+    padding: 10px;
+    background-color: #495e57;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Add smooth transition */
+  }
 
-/* Hover effect for the submit button */
-button[type="submit"]:hover {
-  background-color: #15201d;
-}
+  /* Hover effect for the submit button */
+  button[type="submit"]:hover {
+    background-color: #15201d;
+  }
 
-/* Style for the button group container */
-.button-group {
-  text-align: center; /* Center-align the buttons */
-  margin-top: 20px; /* Add some top margin for spacing */
-}
+  /* Style for the button group container */
+  .button-group {
+    text-align: center; /* Center-align the buttons */
+    margin-top: 20px; /* Add some top margin for spacing */
+  }
 
-/* Style for the "Submit" button */
-.button-group button[type="submit"] {
-  padding: 10px 20px;
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  margin-right: 10px; /* Add some right margin for spacing between buttons */
-  transition: background-color 0.3s ease; /* Add smooth transition */
-}
+  /* Style for the "Submit" button */
+  .button-group button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px; /* Add some right margin for spacing between buttons */
+    transition: background-color 0.3s ease; /* Add smooth transition */
+  }
 
-/* Hover effect for the "Submit" button */
-.button-group button[type="submit"]:hover {
-  background-color: #0056b3;
-}
+  /* Hover effect for the "Submit" button */
+  .button-group button[type="submit"]:hover {
+    background-color: #0056b3;
+  }
 
-/* Style for the "Cancel" button */
-.button-group button[type="button"] {
-  padding: 10px 20px;
-  background-color: #dc3545;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease; /* Add smooth transition */
-}
+  /* Style for the "Cancel" button */
+  .button-group button[type="button"] {
+    padding: 10px 20px;
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Add smooth transition */
+  }
 
-/* Hover effect for the "Cancel" button */
-.button-group button[type="button"]:hover {
-  background-color: #b51b28;
-}
+  /* Hover effect for the "Cancel" button */
+  .button-group button[type="button"]:hover {
+    background-color: #b51b28;
+  }
+
+  /* Media query for screens with a maximum width of 1024px */
+  @media screen and (max-width: 1024px) {
+    /* Adjust the width of the container to fit smaller screens */
+    .booking-form {
+      width: 100%;
+      padding: 20px; /* Reduce padding for smaller screens */
+    }
+
+    /* Center-align the form heading */
+    .booking-form h2 {
+      text-align: center;
+    }
+
+    /* Reduce the padding and font size for labels and input fields */
+    .form-group {
+      margin-bottom: 15px;
+    }
+
+    .form-group label {
+      margin-bottom: 3px;
+      font-size: 14px;
+    }
+
+    .form-group input[type="date"],
+    .form-group input[type="time"],
+    .form-group input[type="number"],
+    .form-group input[type="text"],
+    .form-group input[type="email"] {
+      padding: 8px;
+    }
+
+    /* Adjust button styles for smaller screens */
+    button[type="submit"],
+    .button-group button[type="submit"],
+    .button-group button[type="button"] {
+      width: 100%; /* Make buttons full width */
+      padding: 12px; /* Increase padding for better touch usability */
+    }
+
+    /* Reduce right margin between buttons for better spacing */
+    .button-group button[type="submit"] {
+      margin-right: 0;
+    }
+  }
